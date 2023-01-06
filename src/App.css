@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+.Stadium{
+  background-image: url('./assets/img/maps/Stadium.jpg');
+}
+.Tera{
+  background-image: url('./assets/img/maps/Tera.jpg');
+}
+.SpaceAdventure{
+  background-image: url('./assets/img/maps/SpaceAdventure.png');
+}
+.Portal{
+  background-image: url('./assets/img/maps/Portal.png');
+}
+.NewWorld{
+  background-image: url('./assets/img/maps/NewWorld.jpg');
+}
+.Lac{
+  background-image: url('./assets/img/maps/Lac.png');
+}
+.Jungle{
+  background-image: url('./assets/img/maps/Jungle.png');
+}
+.FullMoon{
+  background-image: url('./assets/img/maps/FullMoon.png');
+}
+
+body {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.6rem;
+}
+.App {
+  text-align: center;
+  scrollbar-color: rebeccapurple green;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.bg-home{
+  background-image: url('assets/img/bg-home.jpg');
+  object-fit: cover;
+}
+
+.spawn-home {
+  animation: spawnHome 1.5s ease-in-out;
+}
+
+.spawn-nav {
+  animation: spawnNav 1.0s ease-in-out;
+}
+
+.spawn-foot {
+  animation: spawnFoot 1.0s ease-in-out;
+}
+
+.spawn-monster {
+  animation: spawnMonster 1.0s ease-in-out;
+}
+
+
+@keyframes spawnHome {
+  1% {
+    transform: translateY(-800px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes spawnNav {
+  1% {
+    transform: translateY(-200px);
+    opacity: 0;
+    overflow: visible;
+  }
+
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes spawnFoot {
+  1% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+
+@keyframes spawnMonster {
+  1% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.monster {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: monster;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes monster {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
